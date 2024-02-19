@@ -1,0 +1,13 @@
+
+(defvar rotate 3)
+(defvar one 1)
+(put :chips 10)
+(put :balloons 6)
+(move rotate)
+(if (not (blocked?)
+((move one)
+(goend))
+(null)))
+(repeat Spaces (if (not (isZero? myChips)) (put :chips 1)))
+(pick :balloons 10)
+(run-dirs :left :up :left :down :right)
